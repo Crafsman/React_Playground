@@ -2,6 +2,7 @@
 This is a simple shopping Cart using React.
 
 # usage
+
 1. import NavBar and Counters.
 2. declare counters array in your state.
 3. implement handleIncrement, handleDelete, and handleReset. 
