@@ -1,6 +1,12 @@
 # React_ShoppingCart
 This is a simple shopping Cart using React.
-# How to run
+
+# How to start
+1. Clone or download to your folder
+2. `cd react-app`
+3. `npm install`
+4. npm start
+
 # Usage
 
 1. import NavBar and Counters.
