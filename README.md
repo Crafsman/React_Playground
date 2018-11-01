@@ -1,7 +1,7 @@
 # React_ShoppingCart
 This is a simple shopping Cart using React.
-
-# usage
+# How to run
+# Usage
 
 1. import NavBar and Counters.
 2. declare counters array in your state.
