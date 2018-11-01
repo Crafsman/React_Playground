@@ -5,14 +5,24 @@ This is a simple shopping Cart using React.
 1. Clone or download to your folder
 2. `cd react-app`
 3. `npm install`
-4. npm start
+4. `npm start`
 
+# Three components
+In _components_ folder, there are three components **counter, counters** and **navbar**. 
+<br> 
+**counter** is used for caculating the quanlity of a certain item. For example, you have **3** apples.
+<br> 
+**counters** is used for storing all the items like an array. For example, in the **counters** array you have apple, watermelon, kiwi ...
+<br> 
+**Navbar** have a badge to demenstrate how many items in your shopping cart.
 # Usage
 
-1. import NavBar and Counters.
+1. import NavBar and Counters to your project.
 2. declare counters array in your state.
 3. implement handleIncrement, handleDelete, and handleReset. 
 4. in render(), pass the `counter` parameter and these theree functons: `handleIncrement, handleDelete, and handleReset`.
+
+the following is the sample code:
 ```javascript
 import NavBar from "./components/navbar";
 import Counters from "./components/counters";
@@ -28,26 +38,17 @@ class App extends Component {
   };
 
   handleIncrement = counter => {
-    const counters = [...this.state.counters];
-    const index = counters.indexOf(counter);
-    counters[index] = { ...counter };
-    counters[index].value++;
-    this.setState({ counters });
+    //your code
   };
 
   handleDelete = counterID => {
-    const counters = this.state.counters.filter(c => c.id !== counterID);
-    this.setState({ counters });
+    //your code
   };
 
   handleReset = () => {
-    const counters = this.state.counters.map(c => {
-      c.value = 0;
-      return c;
-    });
-    this.setState({ counters });
-    console.log("reset");
+    //your code
   };
+
   render() {
     return (
       <React.Fragment>
